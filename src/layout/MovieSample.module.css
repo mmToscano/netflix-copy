@@ -1,0 +1,122 @@
+.principal {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: white;
+}
+
+.infoArea h1 {
+    margin-left: 5%;
+}
+
+.infoArea h4 {
+    margin-left: 5%;
+}
+
+.rankingArea {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.rankingArea img {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+
+.infoArea h4{
+    font-size: 14px;
+    width: 400px;
+}
+
+.downArea {
+    display: flex;
+    align-items: center;
+}
+
+.buttonArea {
+    width: 90%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.buttonArea button{
+    width: 156px;
+    height: 10px;
+    display: flex;
+    background: none;
+    text-decoration: none;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.buttonArea button:nth-of-type(1){
+    width: 145px;
+    background-color: white;
+    margin-right: 10px;
+}
+
+.buttonArea button:nth-of-type(1):hover{
+    background-color: rgba(255, 255, 255, 0.75);;
+}
+
+.buttonArea button:nth-of-type(2){
+    background-color: rgba(109, 109, 110, 0.7);
+    width: 200px;
+    color: white;
+}
+
+.buttonArea button:nth-of-type(2):hover{
+    background-color: rgba(109, 109, 110, 0.5);
+}
+
+.buttonArea button:nth-of-type(2) h4, .buttonArea button:nth-of-type(1) h4{
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.buttonArea button:hover {
+    background-color: whitesmoke;
+}
+
+.buttonArea button img {
+    width: 30px;
+    height: 30px;
+}
+
+.buttonArea button h4 {
+    border: none;
+}
+
+.ageClassificationArea {
+    display: flex;
+    align-items: center;
+    width: 83px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    background-color: rgba(51, 51, 51, .6);
+    border-left: solid white 2px;
+}
+
+.ageClassificationArea div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    height: 100%;
+    width: 25px;
+    background-color: black;
+    color: white;
+    border-radius: 2px;
+}
