@@ -1,13 +1,9 @@
 import styles from "./MoviesSection.module.css"
 
-function MoviesSection({children}) {
+function MoviesSection(props) {
     return(
         <div className={styles.principal}>
-            {children &&
-                children.map((child) => (
-                    child
-                ))
-            }
+            {props.children}  
         </div>
         
     )

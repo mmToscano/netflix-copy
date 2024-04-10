@@ -1,0 +1,43 @@
+.principal {
+    width: 100%;
+    position: relative;
+}
+
+.principal > h1 {
+    height: 15px;
+    margin-left: 5%;
+    font-size: 16px;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+}
+
+.toggleButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    width: 50px;
+    background-color: rgba(0, 0, 0, .7);
+    cursor: pointer;
+}
+
+.toggleButton:hover {
+    background-color: rgba(0, 0, 0, .8)
+}
+
+.toggleButton img {
+    height: 50%;
+    width: 50%;
+}
+
+.voltar {
+    transform: rotate(180deg);
+}

@@ -1,11 +1,22 @@
 .principal {
     position: fixed; 
     width: 100%;
-    height: 60px;
+    height: 90px;
     padding-left: 5%;
     padding-right: 5%;
     display: flex;
     align-items: center;
+    background-image: linear-gradient(182deg, rgba(0, 0, 0, .7) 10%, transparent);
+    transition: background-color ease .4s;
+    z-index: 1;
+}
+
+.principal img {
+    width: 120px;
+}
+
+.scrolled {
+    background-color: black;
 }
 
 .principal button {
@@ -25,6 +36,36 @@
 }
 
 .selectionArea {
-    width: 500px;
     margin-right: 300px;
+}
+
+.selectionArea button {
+    font-size: 18px;
+    margin-right: 7px;
+}
+
+.configArea {
+    position: absolute;
+    right: 5%;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.configArea button {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.configArea img {
+    width: 30px;
+}
+
+#userIcon {
+    width: 50px;
+}
+
+#seta {
+    width: 10px;
 }

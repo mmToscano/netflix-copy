@@ -1,6 +1,7 @@
 .principal {
     width: 100%;
-    background-image: url("C:\Users\MMora\Programacao\VisualStudio\netflix-copy\netflix\src\imgs\bigImage.jpg");
+    height: 710px;
+    background-image: url("C:\Users\MMora\Programacao\VisualStudio\netflix-copy\netflix\src\imgs\bigImage.png");
     background-repeat: no-repeat;
     background-size: cover;
 }

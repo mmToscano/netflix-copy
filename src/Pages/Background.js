@@ -5,7 +5,6 @@ function Background({children1, children2}) {
         <div className={styles.principal}>
             {children1}
             {children2}
-            oi
         </div>
     )
 }
