@@ -1,12 +1,18 @@
+import React, {useState} from 'react'
 import styles from "./MovieIcon.module.css"
 
-import defaultImg from "../imgs/imagemIlustrativa.png"
+import MovieBigCard from "./MovieBigCard"
 
-function MovieIcon({movie, buttonState}) {
+function MovieIcon({movie}) {
+
+    const [showCard, setShowCard] = useState(false);
+
     return(
-        <div className={styles.principal}>
-            <img src={defaultImg}/>
-            <h1>{movie.name}</h1>
+        <div className={styles.principal} onMouseEnter={() => setShowCard(true)} onMouseLeave={() => setShowCard(false)}>
+            <img src={movie.src}/>
+            {showCard &&
+                <MovieBigCard src={movie.src}/>
+            }
         </div>
     )
 }

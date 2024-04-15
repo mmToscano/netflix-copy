@@ -14,7 +14,7 @@ function Slider({movies}) {
     function toggleCarousel(type) {
 
         if(type === 'avancar'){
-            if(!(showCurrently == movies.length)){
+            if(!(showCurrently == movies.moviesList.length)){
                 setShowCurrently(showCurrently+5)
             }else{
                 setShowCurrently(5)
@@ -26,7 +26,7 @@ function Slider({movies}) {
             if(!(showCurrently == 5)){
                 setShowCurrently(showCurrently-5)
             }else{
-                setShowCurrently(movies.length)
+                setShowCurrently(movies.moviesList.length)
             }
             
         }
@@ -36,14 +36,14 @@ function Slider({movies}) {
 
     return(
         <div className={styles.principal}>
-            <h1>Séries</h1>
+            <h1>{movies.type}</h1>
             <div className={styles.carousel}>
                 <div className={styles.toggleButton} id='voltar' onClick={() => toggleCarousel('voltar')}>
                     <img src={avancarIcon} className={styles.voltar} />
                 </div>
                 <div className={styles.slider}>
-                    {movies &&
-                        movies.slice(showCurrently-5, showCurrently).map((movie) => (
+                    {movies.moviesList &&
+                        movies.moviesList.slice(showCurrently-5, showCurrently).map((movie) => (
                             <MovieIcon movie={movie}/>
                         ))
                     }

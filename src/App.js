@@ -17,7 +17,7 @@ function App() {
       <MoviesSection>
         {movies &&
           movies.map((movie) => (
-            <Slider movies={movie.moviesList}/>
+            <Slider movies={movie}/>
           ))
         }
         

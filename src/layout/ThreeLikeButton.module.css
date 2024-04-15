@@ -1,0 +1,26 @@
+.principal {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 180px;
+    height: 60px;
+    right: -100%;
+    bottom: -4%;
+    border-radius: 100px;
+    background-color: rgb(43, 43, 43);
+}
+
+.principal img {
+    width: 33%;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50px;
+}
+
+.principal img:hover {
+    background-color: grey;
+}
+
+.principal img:nth-of-type(1){
+    transform: rotate(180deg);
+}
